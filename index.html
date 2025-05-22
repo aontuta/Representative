@@ -1,11 +1,70 @@
-<!DOCTYPE html>
 
-<html>
-   <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-      <base target="_top">
-   </head>
-   <body>
-      <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 0;" src="https://script.google.com/macros/s/AKfycbz8QPSEfVMHyRJe_skQtpoHBZIFgNPhlsijlt0oI6jUpQdBrbrhLNQa9ansk1LVFVU7/exec"></iframe>
-   </body>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบผู้แทนสมาชิกสหกรณ์ออมทรัพย์กรมวิชาการเกษตร</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Prompt', sans-serif;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            min-height: 100vh;
+        }
+        
+        .button-card {
+            transition: all 0.3s ease;
+        }
+        
+        .button-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .button-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .button-card:hover .button-icon {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl w-full">
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-indigo-800 mb-8">ระบบผู้แทนสมาชิก</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- ปุ่มที่ 1: ตรวจสอบข้อมูลผู้แทนสมาชิก -->
+            <a href="https://aontuta.github.io/Representative" target="_blank" class="button-card bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl p-6 text-white text-center flex flex-col items-center hover:from-blue-600 hover:to-indigo-700">
+                <div class="button-icon bg-white rounded-full p-4 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold mb-2">ตรวจสอบข้อมูลผู้แทนสมาชิก</h2>
+                <p class="text-sm text-blue-100">คลิกเพื่อตรวจสอบข้อมูลผู้แทนสมาชิก</p>
+            </a>
+            
+            <!-- ปุ่มที่ 2: แจ้งโอนย้ายกลุ่มสมาชิก -->
+            <a href="https://www.doacoop.com" target="_blank" class="button-card bg-gradient-to-r from-green-500 to-teal-600 rounded-xl p-6 text-white text-center flex flex-col items-center hover:from-green-600 hover:to-teal-700">
+                <div class="button-icon bg-white rounded-full p-4 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold mb-2">แจ้งโอนย้ายกลุ่มสมาชิก</h2>
+                <p class="text-sm text-green-100">คลิกเพื่อดำเนินการแจ้งโอนย้ายกลุ่มสมาชิก</p>
+            </a>
+        </div>
+        
+        <div class="mt-10 text-center text-gray-600">
+            <p class="text-sm">ฝ่ายสารสนเทศ</p>
+            <p class="text-xs mt-2">© 2025 ระบบบริการสมาชิกสหกรณ์ออมทรัพย์กรมวิชาการเกษตร จำกัด</p>
+        </div>
+    </div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'943a6b7473cc8954',t:'MTc0Nzg5NzA1MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
